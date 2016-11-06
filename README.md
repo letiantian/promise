@@ -1,9 +1,15 @@
 promise
 =======
 
-es6 promise
 
-**俩年前随手写的，近来发现有人在用，更新下 README.md**
+
+
+
+
+
+
+
+## 原始文档
 
 这是一个极小的 promise 库，仿照 es6 promise api 做了简单实现
 

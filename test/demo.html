@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>demo</title>
 </head>
 <body>
@@ -12,8 +13,8 @@
 <script type="text/javascript">
 
 var words = '你好，你是谁？',
-	len = 0;
-	say = document.getElementById("say");
+		len = 0;
+		say = document.getElementById("say");
 
 function count(num,ms,cb){
 	say.focus();
@@ -26,10 +27,10 @@ function count(num,ms,cb){
 	};
 }
 
-count(words.length,800,function(){
+count(words.length, 800, function(){
 	var w = words.substr(0,++len);
 	say.value = w;
-})
+});
 
 
 // Promise.delay(1000).then(function(){
