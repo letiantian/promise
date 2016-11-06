@@ -20,34 +20,34 @@ promise
 
 - 实例化
 
-    ```
-        new Promise(function(resolve,reject){
-            setTimeout(function(){
-                resolve('ok')
-            },500)
-        }).then(function(msg){
-            console.log(msg)
-        }).catch(function(err){
-            console.log(err)
-        })
-    ```
+```
+new Promise(function(resolve,reject){
+  setTimeout(function(){
+    resolve('ok')
+  },500)
+}).then(function(msg){
+  console.log(msg)
+}).catch(function(err){
+  console.log(err)
+})
+```
 - api
-
-    - Promise.all
-    - Promise.race
-    - Promise.resolve
-    - Promise.reject
-    - Promise.delay
-
+```
+- Promise.all
+- Promise.race
+- Promise.resolve
+- Promise.reject
+- Promise.delay
+```
 
 简单提供了一个 delay 方法，可以循环处理，如
 
 ```
 var pro = Promise.resolve()
 for (var i = 0; i < 5; i++) {
-    pro = pro.delay(500).then(function(){
-        console.log(Date.now())
-    })
+  pro = pro.delay(500).then(function(){
+    console.log(Date.now())
+  })
 }
 ```
 
