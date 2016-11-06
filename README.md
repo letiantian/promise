@@ -1,11 +1,16 @@
 promise
 =======
 
+常见Promise实现：
+
+* https://github.com/taylorhakes/promise-polyfill
+* https://github.com/then/promise
+* https://www.promisejs.org/implementing/
+* Bluebird
 
 
 
-
-
+[JavaScript Promise迷你书](http://liubin.org/promises-book/)
 
 
 
