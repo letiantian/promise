@@ -6,10 +6,10 @@ var isFunction = function(obj){
   return 'function' === typeof obj;
 }
 var isArray = function(obj) {
-    return Object.prototype.toString.call(obj) === "[object Array]";
+  return Object.prototype.toString.call(obj) === "[object Array]";
 }
 var isThenable = function(obj){
-    return obj && typeof obj['then'] == 'function';
+  return obj && typeof obj['then'] == 'function';
 }
 
 // 状态转变
